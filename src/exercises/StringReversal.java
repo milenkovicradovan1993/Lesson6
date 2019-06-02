@@ -1,5 +1,7 @@
 package exercises;
 
+import java.util.Scanner;
+
 import junit.framework.TestCase;
 
 public class StringReversal extends TestCase {
@@ -11,8 +13,17 @@ public class StringReversal extends TestCase {
 	 *       QcXgW9w4wQd=v?hctaw/moc.ebutuoy
 	 */
 
-//	public void test() {
-//		assertEquals("cellardoor", reverseMe("roodrallec"));
-//	}
+	public void test() {
+		String text = "QcXgW9w4wQd=v?hctaw/moc.ebutuoy";
+	    String reversed = "";
+	 
+	    for (int i=text.length()-1; i>=0; i--) {
+	      reversed += text.charAt(i);
+	    }
+	 
+	    System.out.println(reversed);
+	 
+	  }
 
-}
+	}
+
